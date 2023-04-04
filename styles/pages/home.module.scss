@@ -1,0 +1,10 @@
+
+@import "@styles/variables.module.scss";
+
+.root {
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    background-color: rgb(213, 213, 213);
+    @include center;
+}

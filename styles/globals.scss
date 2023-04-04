@@ -1,0 +1,49 @@
+
+//Google Fonts import => @import url("########################")
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+body {
+  font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+header, footer, nav, menu, article, aside, section, details, figcaption, figure{
+  display: block;
+}
+ul, ol {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+}
+img {
+  vertical-align: bottom;
+}
+img {
+  border: none;
+}
+strong {
+  font-weight: normal;
+}
+i{
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+button {
+	background: none;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}

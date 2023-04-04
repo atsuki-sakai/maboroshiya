@@ -1,0 +1,40 @@
+$primary-color: #1f7c00;
+$accent-color: #FFFFFF;
+$base-color: white;
+$padding: 1rem;
+$letter-spacing: 1px;
+$primary-font-style: "Zen Kaku Gothic New";// google fonts
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$max-width: 72rem;
+
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+
+:export {
+  primary-color: $primary-color;
+  accent-color: $accent-color;
+  base-color: $base-color;
+  primary-font-style: $primary-font-style;
+  padding: $padding;
+  letter-spacing: $letter-spacing;
+  box-shadow: $box-shadow;
+  max-width: $max-width;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mq($size) {
+  @media screen and (min-width: #{map-get($breakpoints, $size)}) {
+    @content;
+  }
+}

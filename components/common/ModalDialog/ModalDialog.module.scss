@@ -1,0 +1,80 @@
+
+// styles
+
+.overlay {
+    position: fixed;
+    z-index:777;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(2.4px);
+	backdrop-filter: blur(2.4px);
+    animation: showModalAnimation 0.2s 0s ease-in-out forwards;
+    will-change: opacity;
+}
+.hidden {
+    display: none;
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(4.4px);
+	backdrop-filter: blur(4.4px);
+}
+
+.modal_container {
+    z-index:778;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_wrapper {
+    will-change: transform, opacity;
+    animation: fadeInAnimation 0.4s 0.1s ease-in-out forwards;
+    opacity:0;
+    transform: translateY(30px);
+    height: fit-content;
+    width: 320px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: white;
+}
+.modal_header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close_button {
+    display: inline-block;
+}
+
+// animations
+
+@keyframes showModalAnimation {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

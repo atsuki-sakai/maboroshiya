@@ -1,0 +1,31 @@
+
+@import "@styles/variables.module.scss";
+
+.splash_screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 80;
+    border: 1px;
+    background: linear-gradient(#eab000, #00ff1a);
+    will-change: transfrom;
+    animation: fadeOut 1.1s 2s ease-in-out forwards;
+}
+
+.container {
+    @include center;
+}
+
+@keyframes fadeOut {
+    0%{
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+        background-color: transparent;
+    }
+}
+
