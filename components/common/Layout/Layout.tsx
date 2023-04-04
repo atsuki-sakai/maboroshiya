@@ -10,12 +10,13 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <>
+    <div className={style.root}>
       <SplashScreen />
       <Header />
-      <main className={style.root}>{children}</main>
+      <main>{children}</main>
       <Footer />
-    </>
+      <Drawer />
+    </div>
   )
 }
 

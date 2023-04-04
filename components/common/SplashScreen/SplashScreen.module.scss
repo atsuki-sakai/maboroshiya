@@ -3,12 +3,12 @@
 
 .splash_screen {
     position: absolute;
-    top: 0;
+    top: 0%;
     left: 0;
     right: 0;
     bottom: 0;
     height: 100vh;
-    z-index: 80;
+    z-index: 800;
     border: 1px;
     background: linear-gradient(#eab000, #00ff1a);
     will-change: transfrom;
@@ -24,7 +24,7 @@
         transform: translateY(0%);
     }
     100% {
-        transform: translateY(-100%);
+        transform: translateY(-120%);
         background-color: transparent;
     }
 }

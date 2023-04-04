@@ -1,0 +1,126 @@
+
+@import "@styles/variables.module.scss";
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.background_image_container {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(255, 255, 255) 0%, transparent 60%);
+    }
+}
+
+.background_image {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.footer_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: black;
+    z-index: 2;
+    letter-spacing: 2px;
+    
+    @include mq(md){
+        padding: 3rem;
+    }
+}
+
+.footer_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    .footer_title {
+        text-align: center;
+        padding-top: 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-shadow: 1px 1px rgba(128, 128, 128, 0.464);
+    }
+}
+.footer_grid {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.grid_item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.infomation_item {
+    p{
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+        text-shadow: 1px 1px rgba(128, 128, 128, 0.464);
+    }
+    span {
+        display: block;
+        font-size: 0.7rem;
+        text-shadow: 1px 1px rgba(128, 128, 128, 0.464);
+        padding-bottom: 0.5rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
+
+.grid_item_2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    p {
+        width: 100%;
+        text-align: end;
+        padding-right: 1rem;
+        text-shadow: 1px 1px rgba(128, 128, 128, 0.464);
+        font-family: serif;
+    }
+    ul {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.5rem;
+    }
+    a {
+        padding: 0.23rem 0;
+        display: block;
+        text-align: end;
+        font-size: 0.8rem;
+        text-shadow: 1px 1px rgba(128, 128, 128, 0.464);
+        color: white;
+    }
+}
+
+

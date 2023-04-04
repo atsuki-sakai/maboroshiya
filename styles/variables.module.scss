@@ -1,11 +1,12 @@
-$primary-color: #1f7c00;
-$accent-color: #FFFFFF;
-$base-color: white;
+$primary-color: #238c00;
+$accent-color: #81ff9c;
+$base-color: rgb(255, 255, 255);
 $padding: 1rem;
 $letter-spacing: 1px;
 $primary-font-style: "Zen Kaku Gothic New";// google fonts
 $box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 $max-width: 72rem;
+$primary-gray: rgb(201, 201, 201);
 
 
 $breakpoints: (
@@ -25,6 +26,7 @@ $breakpoints: (
   letter-spacing: $letter-spacing;
   box-shadow: $box-shadow;
   max-width: $max-width;
+  primary-graay: $primary-gray;
 }
 
 @mixin center {
