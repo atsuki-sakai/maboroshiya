@@ -46,6 +46,11 @@ const Drawer = () => {
             <p>ホーム</p>
           </div>
         </Link>
+        <Link href={''}>
+          <div className={style.drawer_menu}>
+            <p>ホーム</p>
+          </div>
+        </Link>
       </div>
       <div className={style.drawer_footer}>
         <Link href={'/'}>

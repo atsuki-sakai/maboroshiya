@@ -40,3 +40,10 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin gold_style {
+  color: transparent;
+  background: repeating-linear-gradient(0deg, #B67B03 0.1em, #DAAF08 0.2em, #FEE9A0 0.3em, #DAAF08 0.4em, #B67B03 0.5em); 
+  -webkit-background-clip: text;
+  background-clip: text;
+}

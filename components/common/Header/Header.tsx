@@ -13,7 +13,7 @@ const Header = () => {
   const [state, setState] = useRecoilState(drawerState)
   return (
     <header className={style.header}>
-      <div className={style.header_container}>
+      <div className={style.header_overlay_container}>
         <div className={style.background_image_container}>
           <Image
             className={style.background_image}
@@ -24,15 +24,18 @@ const Header = () => {
           />
           <div className={style.header_container}>
             <div className={style.header_wrapper}>
-              <div className={style.title_container}>
-                <h1>丹波篠山の黒枝豆直販サイト</h1>
+              <div className={style.header_container}>
+                <h1>まぼろし屋</h1>
+                <p>此処でしか味わえない旬を味わう。</p>
               </div>
-              <button onClick={() => setState(!state)}>
-                <Menu className={style.menu_icon} />
-              </button>
             </div>
           </div>
         </div>
+      </div>
+      <div className={style.menu_container}>
+        <button onClick={() => setState(!state)}>
+          <Menu className={style.menu_icon} />
+        </button>
       </div>
     </header>
   )
