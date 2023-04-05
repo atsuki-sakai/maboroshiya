@@ -25,8 +25,7 @@ const Header = () => {
           <div className={style.header_container}>
             <div className={style.header_wrapper}>
               <div className={style.title_container}>
-                {/* <h1 className={style.title}>まぼろし屋</h1> */}
-                <span>丹波篠山の黒枝豆直販サイト</span>
+                <h1>丹波篠山の黒枝豆直販サイト</h1>
               </div>
               <button onClick={() => setState(!state)}>
                 <Menu className={style.menu_icon} />

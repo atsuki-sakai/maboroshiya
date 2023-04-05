@@ -24,7 +24,8 @@ const Drawer = () => {
       <div className={style.drawer_header}>
         <p>ようこそ まぼろし屋へ</p>
       </div>
-      <div className={style.drawer_content}>
+      <div className={style.drawer_content}></div>
+      <div className={style.drawer_content_wrapper}>
         <Link href={''}>
           <div className={style.drawer_menu}>
             <p>ホーム</p>
