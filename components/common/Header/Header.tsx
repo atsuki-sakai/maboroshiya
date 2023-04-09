@@ -17,7 +17,7 @@ const Header = () => {
         <div className={style.background_image_container}>
           <Image
             className={style.background_image}
-            src={'/images/14.webp'}
+            src={'/public/images/14.webp'}
             width={1920}
             height={1080}
             alt="footer background image"
