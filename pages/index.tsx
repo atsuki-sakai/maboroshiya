@@ -21,7 +21,7 @@ export default function Home() {
           options={{ autoplay: true, speed: 2000, rewind: true, arrows: false }}
         >
           <SplideSlide>
-            <Image
+            <img
               className={style.slide_image}
               src={'/images/2.webp'}
               width={1920}
@@ -39,7 +39,7 @@ export default function Home() {
             />
           </SplideSlide>
           <SplideSlide>
-            <Image
+            <img
               className={style.slide_image}
               src={'/images/4.webp'}
               width={1920}
@@ -50,7 +50,7 @@ export default function Home() {
         </Splide>
       </div>
       <div className={style.product_description_container}>
-        <Image
+        <img
           className={style.product_image}
           src={'/images/15.webp'}
           width={1920}
