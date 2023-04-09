@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from '@styles/pages/home.module.scss'
 import Image from 'next/image'
 
@@ -71,6 +71,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div>HELLOW</div>
     </div>
   )
 }
