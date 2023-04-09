@@ -30,7 +30,7 @@ export default function Home() {
             />
           </SplideSlide>
           <SplideSlide>
-            <Image
+            <img
               className={style.slide_image}
               src={'/images/3.webp'}
               width={1920}

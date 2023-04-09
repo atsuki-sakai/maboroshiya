@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className={style.background_image_container}>
-        <Image
+        <img
           className={style.background_image}
           src={'/images/3.webp'}
           width={1920}

@@ -15,7 +15,7 @@ const Header = () => {
     <header className={style.header}>
       <div className={style.header_overlay_container}>
         <div className={style.background_image_container}>
-          <Image
+          <img
             className={style.background_image}
             src={'/images/14.webp'}
             width={1920}
